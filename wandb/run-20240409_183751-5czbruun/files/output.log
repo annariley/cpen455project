@@ -1,0 +1,32 @@
+/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|                                                   | 0/259 [00:00<?, ?it/s]
+  0%|                                                   | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 192, in <module>
+    train_or_test(model = model,
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 26, in train_or_test
+    for batch_idx, item in enumerate(tqdm(data_loader)):
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 439, in __iter__
+    return self._get_iterator()
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 387, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1040, in __init__
+    w.start()
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/popen_spawn_posix.py", line 47, in _launch
+    reduction.dump(process_obj, fp)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+_pickle.PicklingError: Can't pickle <function <lambda> at 0x7fb8f23e2320>: attribute lookup <lambda> on dataset failed

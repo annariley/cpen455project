@@ -1,0 +1,16 @@
+/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|                                                   | 0/259 [00:00<?, ?it/s]
+  0%|                                                   | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 194, in <module>
+    train_or_test(model = model,
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 31, in train_or_test
+    model_output = model(model_input)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: PixelCNN.forward() missing 1 required positional argument: 'class_label'
+torch.Size([3, 64, 64])
+Class3

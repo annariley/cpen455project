@@ -1,0 +1,321 @@
+/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|                                                                                                                     | 0/500 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 259/259 [1:14:33<00:00,  9.06s/it]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:54<00:00,  1.65s/it]
+  0%|                                                                                                                   | 0/500 [1:43:37<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 226, in <module>
+    sample_t = sample(model, args.sample_batch_size, args.obs, sample_op, i)
+  File "/Users/annariley/455/CPEN455HW-2023W2/utils.py", line 186, in sample
+    out   = model(data_v,label_tensor, sample=True)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/annariley/455/CPEN455HW-2023W2/model.py", line 146, in forward
+    u, ul = self.down_layers[i](u, ul, u_list, ul_list, conditioning=conditioning)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/annariley/455/CPEN455HW-2023W2/model.py", line 47, in forward
+    u  = self.u_stream[i](u, a=u_list.pop())
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/annariley/455/CPEN455HW-2023W2/layers.py", line 136, in forward
+    x = self.nonlinearity(x)
+  File "/Users/annariley/455/CPEN455HW-2023W2/model.py", line 58, in <lambda>
+    self.resnet_nonlinearity = lambda x : concat_elu(x)
+  File "/Users/annariley/455/CPEN455HW-2023W2/utils.py", line 16, in concat_elu
+    return F.elu(torch.cat([x, -x], dim=axis))
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/functional.py", line 1564, in elu
+    result = torch._C._nn.elu(input, alpha)
+KeyboardInterrupt

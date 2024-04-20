@@ -1,0 +1,64 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-04-18T22:05:15.593595",
+    "startedAt": "2024-04-18T22:05:14.961224",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size",
+        "16",
+        "--sample_batch_size",
+        "16",
+        "--sampling_interval",
+        "25",
+        "--save_interval",
+        "25",
+        "--dataset",
+        "cpen455",
+        "--nr_resnet",
+        "1",
+        "--lr_decay",
+        "0.999995",
+        "--max_epochs",
+        "500",
+        "--en_wandb",
+        "True"
+    ],
+    "state": "running",
+    "program": "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py",
+    "codePathLocal": "pcnn_train.py",
+    "codePath": "pcnn_train.py",
+    "git": {
+        "remote": "https://github.com/DSL-Lab/CPEN455HW-2023W2.git",
+        "commit": "2f7e47d6fb0abda2303d3fb747033b00a0a32bb6"
+    },
+    "email": "annamriley4@gmail.com",
+    "root": "/Users/annariley/455/CPEN455HW-2023W2",
+    "host": "dhcp-128-189-194-94.ubcsecure.wireless.ubc.ca",
+    "username": "annariley",
+    "executable": "/opt/anaconda3/envs/cpen455/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2300,
+        "min": 2300,
+        "max": 2300
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2300,
+            "min": 2300,
+            "max": 2300
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 465.62699127197266,
+            "used": 10.105812072753906
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

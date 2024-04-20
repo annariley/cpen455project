@@ -1,0 +1,31 @@
+/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|                                                                        | 0/259 [00:00<?, ?it/s]
+  0%|                                                                        | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 195, in <module>
+    train_or_test(model = model,
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 32, in train_or_test
+    model_output = model(model_input, label_tensor)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/annariley/455/CPEN455HW-2023W2/model.py", line 131, in forward
+    u_list  = [self.u_init(x)]
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/annariley/455/CPEN455HW-2023W2/layers.py", line 51, in forward
+    x = self.conv(x)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1561, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [160, 11, 2, 3], expected input[16, 166, 65, 66] to have 11 channels, but got 166 channels instead
+torch.Size([16, 3, 64, 64])

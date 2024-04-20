@@ -1,0 +1,1 @@
+{"training-Average-BPD": 6.464329316701997, "_timestamp": 1713480009.149659, "_runtime": 1322.0184049606323, "_step": 3, "training-epoch": 0, "val-Average-BPD": 5.49521481283115, "val-epoch": 0, "_wandb": {"runtime": 1321}}

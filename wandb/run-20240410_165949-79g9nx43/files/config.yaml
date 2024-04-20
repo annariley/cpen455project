@@ -1,0 +1,92 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1712793589.0
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 13
+      - 19
+      - 23
+      4: 3.10.13
+      5: 0.16.6
+      8:
+      - 5
+      13: darwin-x86_64
+current_time:
+  desc: null
+  value: '2024-04-10 16:59:54'
+en_wandb:
+  desc: null
+  value: true
+tag:
+  desc: null
+  value: default
+sampling_interval:
+  desc: null
+  value: 25
+data_dir:
+  desc: null
+  value: data
+save_dir:
+  desc: null
+  value: models
+sample_dir:
+  desc: null
+  value: samples
+dataset:
+  desc: null
+  value: cpen455
+save_interval:
+  desc: null
+  value: 25
+load_params:
+  desc: null
+  value: null
+obs:
+  desc: null
+  value:
+  - 3
+  - 32
+  - 32
+nr_resnet:
+  desc: null
+  value: 1
+nr_filters:
+  desc: null
+  value: 160
+nr_logistic_mix:
+  desc: null
+  value: 10
+lr:
+  desc: null
+  value: 0.0002
+lr_decay:
+  desc: null
+  value: 0.999995
+batch_size:
+  desc: null
+  value: 16
+sample_batch_size:
+  desc: null
+  value: 16
+max_epochs:
+  desc: null
+  value: 500
+seed:
+  desc: null
+  value: 1

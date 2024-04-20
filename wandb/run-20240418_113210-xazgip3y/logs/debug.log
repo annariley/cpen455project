@@ -1,0 +1,31 @@
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Configure stats pid to 81117
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Loading settings from /Users/annariley/.config/wandb/settings
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Loading settings from /Users/annariley/455/CPEN455HW-2023W2/wandb/settings
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'pcnn_train.py', 'program_abspath': '/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py', 'program': '/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py'}
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_init.py:_log_setup():521] Logging user logs to /Users/annariley/455/CPEN455HW-2023W2/wandb/run-20240418_113210-xazgip3y/logs/debug.log
+2024-04-18 11:32:10,477 INFO    MainThread:81117 [wandb_init.py:_log_setup():522] Logging internal logs to /Users/annariley/455/CPEN455HW-2023W2/wandb/run-20240418_113210-xazgip3y/logs/debug-internal.log
+2024-04-18 11:32:10,478 INFO    MainThread:81117 [wandb_init.py:init():561] calling init triggers
+2024-04-18 11:32:10,478 INFO    MainThread:81117 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-18 11:32:10,478 INFO    MainThread:81117 [wandb_init.py:init():611] starting backend
+2024-04-18 11:32:10,478 INFO    MainThread:81117 [wandb_init.py:init():615] setting up manager
+2024-04-18 11:32:10,480 INFO    MainThread:81117 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-18 11:32:10,481 INFO    MainThread:81117 [wandb_init.py:init():623] backend started and connected
+2024-04-18 11:32:10,487 INFO    MainThread:81117 [wandb_init.py:init():715] updated telemetry
+2024-04-18 11:32:10,533 INFO    MainThread:81117 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-18 11:32:11,000 INFO    MainThread:81117 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-18 11:32:11,203 INFO    MainThread:81117 [wandb_run.py:_on_init():2366] got version response 
+2024-04-18 11:32:11,204 INFO    MainThread:81117 [wandb_init.py:init():799] starting run threads in backend
+2024-04-18 11:32:13,872 INFO    MainThread:81117 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-18 11:32:13,872 INFO    MainThread:81117 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-18 11:32:13,872 INFO    MainThread:81117 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-18 11:32:13,872 INFO    MainThread:81117 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-18 11:32:13,873 INFO    MainThread:81117 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-18 11:32:13,874 INFO    MainThread:81117 [wandb_config.py:__setitem__():151] config set current_time = 2024-04-18 11:32:13 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f9d6cae7a30>>
+2024-04-18 11:32:13,874 INFO    MainThread:81117 [wandb_run.py:_config_callback():1347] config_cb current_time 2024-04-18 11:32:13 None
+2024-04-18 11:32:13,877 INFO    MainThread:81117 [wandb_run.py:_config_callback():1347] config_cb None None {'en_wandb': True, 'tag': 'default', 'sampling_interval': 25, 'data_dir': 'data', 'save_dir': 'models', 'sample_dir': 'samples', 'dataset': 'cpen455', 'save_interval': 25, 'load_params': None, 'obs': [3, 32, 32], 'nr_resnet': 1, 'nr_filters': 160, 'nr_logistic_mix': 10, 'lr': 0.0002, 'lr_decay': 0.999995, 'batch_size': 16, 'sample_batch_size': 16, 'max_epochs': 500, 'seed': 1}
+2024-04-18 11:32:24,139 WARNING MsgRouterThr:81117 [router.py:message_loop():77] message_loop has been closed

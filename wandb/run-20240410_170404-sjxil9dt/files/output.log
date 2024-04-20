@@ -1,0 +1,12 @@
+torch.Size([3, 64, 64])
+Class3
+/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|                                                   | 0/259 [00:00<?, ?it/s]
+  0%|                                                   | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 195, in <module>
+    train_or_test(model = model,
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 31, in train_or_test
+    label_tensor = torch.tensor(label)
+ValueError: too many dimensions 'str'

@@ -1,0 +1,23 @@
+/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:28: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+  0%|                                                                        | 0/259 [00:00<?, ?it/s]
+  0%|                                                                        | 0/500 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 195, in <module>
+    train_or_test(model = model,
+  File "/Users/annariley/455/CPEN455HW-2023W2/pcnn_train.py", line 32, in train_or_test
+    model_output = model(model_input, label_tensor)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/annariley/455/CPEN455HW-2023W2/model.py", line 105, in forward
+    conditioning = self.embedding_transform(class_label.float())        # similar as done in the tf repo :
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/anaconda3/envs/cpen455/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x16 and 4x160)
+torch.Size([16, 3, 64, 64])
